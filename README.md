@@ -21,6 +21,30 @@ _Идеально подходит для тех, кто хочет эконом
  - Google Chrome последней версии.
  - 4 GB RAM
 
+## Поддерживаемые платформы
+ - ✅ **Windows** - официальная поддержка, доступны .exe релизы
+ - ✅ **macOS** - полная поддержка (Intel и Apple Silicon)
+ - ✅ **Linux** - поддерживается через JAR
+
+### 🍎 Сборка и запуск на macOS
+Для пользователей macOS доступна полная документация по сборке приложения из исходного кода.
+
+📖 **[Подробная инструкция для macOS → BUILD_MAC.md](BUILD_MAC.md)**
+
+**Быстрый старт для macOS:**
+```bash
+# Установка зависимостей
+brew install openjdk@21 maven
+
+# Клонирование и сборка
+git clone https://github.com/SunatSS/MangaBuffAutoDaily.git
+cd MangaBuffAutoDaily
+./mvnw clean package -P mac
+
+# Запуск
+java -jar target/mangaBuffJob-0.0.1-SNAPSHOT.jar
+```
+
 ## Инструкция по применению и использованию:
  1. Скачиваем последнюю версию тут https://github.com/NikitaKuby/MangaBuffAutoDaily/releases
  2. Желательно переместить скачанный .exe файл в отдельную папку, где будет располагаться программа (например в папку "name" на рабочем столе). 
